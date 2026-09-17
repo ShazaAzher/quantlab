@@ -1,7 +1,11 @@
 # tests/test_metrics.py — includes the bug catch above
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
+
 import numpy as np
 import pandas as pd
-from src import metrics as M
+from quantlab import metrics as M
 
 
 def test_sharpe_of_constant_returns_is_nan():

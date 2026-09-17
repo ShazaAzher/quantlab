@@ -4,7 +4,7 @@ import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
 import pytest
-from src.data import make_synthetic_market
+from quantlab.data import make_synthetic_market
 
 
 @pytest.fixture(scope="module")

@@ -1,0 +1,15 @@
+# requirements.txt
+# Core runtime dependencies. If you're using pyproject.toml (recommended:
+# `pip install -e ".[dev]"`), you don't need this file at all -- it's here
+# for people/CI setups that expect a plain requirements.txt.
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+
+# --- dev / testing ---
+pytest>=7.0
+pytest-cov>=4.0
+
+# --- optional: only needed if you use quantlab.data's yfinance loader
+# to pull real prices instead of make_synthetic_market() ---
+# yfinance>=0.2

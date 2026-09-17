@@ -1,6 +1,10 @@
 # tests/test_validation.py
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
+
 import pandas as pd
-from src import validation as V
+from quantlab import validation as V
 
 
 def test_folds_have_no_train_test_overlap():

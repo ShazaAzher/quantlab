@@ -4,9 +4,13 @@ The most important test file in the repo. A leakage-prevention library
 that isn't tested against an actual leak is just an assertion of good
 intentions -- these two tests are the proof.
 """
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
+
 import pytest
-from src import signals as S
-from src import validation as V
+from quantlab import signals as S
+from quantlab import validation as V
 
 
 def _clean_pipeline(prices):

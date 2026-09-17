@@ -7,7 +7,7 @@ common leak (sizing a trade using the realized move it's about to make).
 from __future__ import annotations
 import numpy as np
 import pandas as pd
-from .. import features as F
+from . import features as F
 
 
 def signal_to_raw_weights(signal: pd.DataFrame, gross_leverage: float = 1.0) -> pd.DataFrame:

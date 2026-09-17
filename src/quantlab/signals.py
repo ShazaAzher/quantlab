@@ -1,7 +1,7 @@
 # signals.py
 from __future__ import annotations
 import pandas as pd
-from .. import features as F
+from . import features as F
 
 
 def momentum_meanrev_blend(prices, returns, mom_window=60, mr_window=5,

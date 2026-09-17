@@ -1,7 +1,11 @@
 # tests/test_execution.py
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
+
 import numpy as np
 import pandas as pd
-from src import execution as E
+from quantlab import execution as E
 
 
 def test_held_weights_are_shifted_by_exactly_one_bar():

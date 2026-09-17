@@ -1,6 +1,10 @@
 # tests/test_costs.py
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
+
 import pandas as pd
-from src import costs as C
+from quantlab import costs as C
 
 
 def test_zero_turnover_for_constant_weights():
