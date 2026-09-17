@@ -5,11 +5,11 @@
 numpy>=1.24
 pandas>=2.0
 scipy>=1.10
-
+pandas-datareader
 # --- dev / testing ---
 pytest>=7.0
 pytest-cov>=4.0
 
 # --- optional: only needed if you use quantlab.data's yfinance loader
 # to pull real prices instead of make_synthetic_market() ---
-# yfinance>=0.2
+yfinance>=0.2

@@ -12,7 +12,7 @@ from __future__ import annotations
 import itertools
 import numpy as np
 import pandas as pd
-from ... import signals as S, sizing as Z, risk as R, execution as E, metrics as M, validation as V
+from . import signals as S, sizing as Z, risk as R, execution as E, metrics as M, validation as V
 
 
 def build_target_weights(prices, returns, params, gross_leverage=1.0,
