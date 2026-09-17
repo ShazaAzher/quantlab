@@ -11,14 +11,14 @@ import itertools
 import numpy as np
 import pandas as pd
 
-from . import signals as S
-from . import features as F
-from . import sizing as Z
-from . import risk as R
-from . import execution as E
-from . import metrics as M
-from . import validation as V
-from . import backtest as B
+from .. import signals as S
+from .. import features as F
+from .. import sizing as Z
+from .. import risk as R
+from .. import execution as E
+from .. import metrics as M
+from .. import validation as V
+from .. import backtest as B
 
 
 def naive_momentum_meanrev_blend(prices, returns, mom_window=60, mr_window=5,

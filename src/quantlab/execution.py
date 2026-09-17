@@ -9,7 +9,7 @@ and pays its trading cost on day t+1 too -- no zero-cost teleportation.
 """
 from __future__ import annotations
 import pandas as pd
-from . import costs as C
+from ... import costs as C
 
 
 def held_weights_from_target(target_weights: pd.DataFrame) -> pd.DataFrame:
